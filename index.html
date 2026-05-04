@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bo'ness Care Home — Nursing Care in Bo'ness, Scotland</title>
+  <meta name="description" content="A purpose-built nursing home providing the highest standard of individualised care in Bo'ness, Scotland. 27 en-suite rooms, beautiful gardens, and dedicated staff." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://cdn.clipond.com/boness/outside_main_enterance.jpg" type="image/jpeg" />
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     NAVIGATION
+══════════════════════════════ -->
+<nav class="nav hero-top">
+  <a href="index.html" class="nav__logo">
+    <img src="https://cdn.clipond.com/boness/logo.jpeg" alt="Bo'ness Care Home" />
+  </a>
+  <ul class="nav__links">
+    <li><a href="index.html"    class="nav__link">Home</a></li>
+    <li><a href="about.html"    class="nav__link">About</a></li>
+    <li><a href="services.html" class="nav__link">Our Care</a></li>
+    <li><a href="facilities.html" class="nav__link">Facilities</a></li>
+    <li><a href="contact.html"  class="nav__link nav__cta">Contact Us</a></li>
+  </ul>
+  <div class="nav__hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section class="hero">
+  <div class="hero__slides">
+    <div class="hero__slide" style="background-image:url('https://cdn.clipond.com/boness/outside_main_enterance.jpg')"></div>
+    <div class="hero__slide" style="background-image:url('https://cdn.clipond.com/boness/garden.jpg')"></div>
+    <div class="hero__slide" style="background-image:url('https://cdn.clipond.com/boness/grounds.jpg')"></div>
+  </div>
+  <div class="hero__overlay"></div>
+
+  <!-- Thin line SVG decoration -->
+  <svg class="line-deco" style="position:absolute;top:15%;left:5%;width:120px;height:120px;opacity:0.25" viewBox="0 0 120 120">
+    <circle cx="60" cy="60" r="55" stroke="white" stroke-width="0.8" fill="none" stroke-dasharray="346" stroke-dashoffset="346">
+      <animate attributeName="stroke-dashoffset" from="346" to="0" dur="3s" begin="0.5s" fill="freeze" />
+    </circle>
+    <circle cx="60" cy="60" r="40" stroke="white" stroke-width="0.5" fill="none" stroke-dasharray="251" stroke-dashoffset="251">
+      <animate attributeName="stroke-dashoffset" from="251" to="0" dur="2.5s" begin="1s" fill="freeze" />
+    </circle>
+  </svg>
+  <svg class="line-deco" style="position:absolute;bottom:20%;right:6%;width:80px;height:160px;opacity:0.2" viewBox="0 0 80 160">
+    <path d="M40 0 C60 40 20 80 40 120 C60 140 40 160 40 160" stroke="white" stroke-width="0.8" fill="none" stroke-dasharray="400" stroke-dashoffset="400">
+      <animate attributeName="stroke-dashoffset" from="400" to="0" dur="3s" begin="0.8s" fill="freeze" />
+    </path>
+  </svg>
+
+  <div class="hero__content">
+    <div class="hero__eyebrow">Est. Bo'ness, Scotland</div>
+    <h1 class="hero__title">Where <em>Caring</em><br>Feels Like Home</h1>
+    <p class="hero__sub">A purpose-built nursing home providing the highest standard of individualised care — where every resident is treated with warmth, dignity, and respect.</p>
+    <div class="hero__actions">
+      <a href="services.html" class="btn btn--primary">Our Care Services</a>
+      <a href="contact.html"  class="btn btn--outline">Arrange a Visit</a>
+    </div>
+  </div>
+
+  <div class="hero__dots">
+    <div class="hero__dot"></div>
+    <div class="hero__dot"></div>
+    <div class="hero__dot"></div>
+  </div>
+  <div class="hero__scroll">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     WELCOME / INTRO
+══════════════════════════════ -->
+<section class="welcome section-pad">
+  <div class="container">
+    <div class="welcome__inner">
+
+      <div class="welcome__text reveal-left">
+        <span class="section-label">Welcome</span>
+        <h2>A Home Built on<br>Compassion & Care</h2>
+        <div class="divider"></div>
+        <p>Bo'ness Care Home is a purpose-built facility where we pride ourselves on providing the highest standard of nursing care, tailored entirely around each person's individual needs and preferences.</p>
+        <p>Our dedicated team works tirelessly to ensure every resident feels valued, comfortable, and truly at home — with personalised care plans reviewed regularly to adapt as needs evolve.</p>
+        <div class="welcome__stats stagger">
+          <div class="stat">
+            <div class="stat__number" data-target="27" data-suffix="">27</div>
+            <div class="stat__label">En-suite Rooms</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" data-target="24" data-suffix="/7">24/7</div>
+            <div class="stat__label">Nursing Care</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" data-target="100" data-suffix="%">100%</div>
+            <div class="stat__label">Personalised Plans</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" data-target="0" data-suffix="">Open</div>
+            <div class="stat__label">Visiting Hours</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="welcome__image-wrap reveal-right">
+        <img src="https://cdn.clipond.com/boness/old_lady_getting_hair_done.jpg" alt="Resident receiving hair care at Bo'ness Care Home" loading="lazy" />
+        <div class="welcome__badge">
+          <div class="welcome__badge-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="welcome__badge-text">
+            <strong>Registered &amp; Regulated</strong>
+            <span>Care Inspectorate Scotland</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     SERVICES OVERVIEW
+══════════════════════════════ -->
+<section class="services section-pad">
+
+  <!-- SVG line decoration -->
+  <svg class="line-deco" style="top:-30px;right:8%;width:200px;height:100px;opacity:0.15" viewBox="0 0 200 100">
+    <path d="M0 80 Q50 10 100 50 Q150 90 200 20" stroke-dasharray="320" stroke-dashoffset="320">
+      <animate attributeName="stroke-dashoffset" from="320" to="0" dur="2s" begin="0s" fill="freeze"/>
+    </path>
+  </svg>
+
+  <div class="container">
+    <div class="section-header--center reveal">
+      <span class="section-label" style="justify-content:center">Our Services</span>
+      <h2>Comprehensive Care<br>for Every Need</h2>
+      <div class="divider divider--center"></div>
+      <p>From nursing care to wellness activities, we offer a full spectrum of services designed to support health, happiness, and independence.</p>
+    </div>
+
+    <div class="services__grid stagger">
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Nursing Care</h3>
+        <p>Round-the-clock qualified nursing staff delivering personalised medical care, with care plans reviewed and adapted regularly to meet evolving needs.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Activities Programme</h3>
+        <p>Our lifestyle leader organises a rich and varied programme of social, creative, and therapeutic activities to keep residents engaged and fulfilled.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Beautiful Surroundings</h3>
+        <p>Private mature gardens with a traditional bandstand, inviting lounges, and peaceful sitting rooms — creating a true home environment.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3>Hair &amp; Wellness</h3>
+        <p>On-site hair stylist and qualified chiropodist, alongside complementary therapies, ensuring residents look and feel their very best.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <h3>Nutritious Dining</h3>
+        <p>Home-cooked meals prepared fresh daily by our catering team, tailored to dietary needs and presented to delight — dining as a daily pleasure.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Family Partnership</h3>
+        <p>We welcome visitors at any time and actively involve residents and their families in care planning — because great care is a shared endeavour.</p>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:3rem" class="reveal">
+      <a href="services.html" class="btn btn--green-outline">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     PHOTO GALLERY PREVIEW
+══════════════════════════════ -->
+<section class="gallery section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Our Home</span>
+      <h2>Life at Bo'ness</h2>
+      <div class="divider"></div>
+      <p>Warm, welcoming spaces designed for comfort and community.</p>
+    </div>
+
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--wide reveal">
+        <img src="https://cdn.clipond.com/boness/common_room_main.jpg" alt="Common Room" loading="lazy" />
+        <div class="gallery__item__overlay"><span class="gallery__item__label">Common Lounge</span></div>
+      </div>
+      <div class="gallery__item gallery__item--tall reveal">
+        <img src="https://cdn.clipond.com/boness/garden.jpg" alt="Gardens" loading="lazy" />
+        <div class="gallery__item__overlay"><span class="gallery__item__label">Gardens</span></div>
+      </div>
+      <div class="gallery__item reveal">
+        <img src="https://cdn.clipond.com/boness/dining_room_main_photo.jpg" alt="Dining Room" loading="lazy" />
+        <div class="gallery__item__overlay"><span class="gallery__item__label">Dining Room</span></div>
+      </div>
+      <div class="gallery__item reveal">
+        <img src="https://cdn.clipond.com/boness/resident_bedroom.jpg" alt="Resident Bedroom" loading="lazy" />
+        <div class="gallery__item__overlay"><span class="gallery__item__label">En-suite Bedroom</span></div>
+      </div>
+      <div class="gallery__item reveal">
+        <img src="https://cdn.clipond.com/boness/fireplace.jpg" alt="Fireplace Lounge" loading="lazy" />
+        <div class="gallery__item__overlay"><span class="gallery__item__label">Fireplace Lounge</span></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem" class="reveal">
+      <a href="facilities.html" class="btn btn--green-outline">View All Facilities</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     PHILOSOPHY / DARK SECTION
+══════════════════════════════ -->
+<section class="philosophy section-pad">
+  <!-- SVG decorative lines -->
+  <svg style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden" viewBox="0 0 1440 700" preserveAspectRatio="none">
+    <path d="M-100 200 Q200 100 500 300 Q800 500 1100 200 Q1300 100 1540 250" stroke="rgba(255,255,255,0.06)" stroke-width="1" fill="none">
+      <animate attributeName="stroke-dashoffset" from="3000" to="0" dur="4s" fill="freeze"/>
+    </path>
+    <path d="M-100 400 Q300 500 600 300 Q900 100 1200 400 Q1400 500 1540 350" stroke="rgba(255,255,255,0.04)" stroke-width="1" fill="none"/>
+    <circle cx="80" cy="100" r="60" stroke="rgba(255,255,255,0.06)" stroke-width="1" fill="none"/>
+    <circle cx="1360" cy="600" r="90" stroke="rgba(255,255,255,0.05)" stroke-width="1" fill="none"/>
+  </svg>
+
+  <div class="container">
+    <div class="philosophy__inner">
+
+      <div class="philosophy__text reveal-left">
+        <span class="section-label">Our Philosophy</span>
+        <h2>Dignity, Respect &amp;<br>Individual Choice</h2>
+        <p>We believe great care starts with truly knowing each person. Our approach centres on dignity, respect, and championing the individual choices of every resident.</p>
+
+        <div class="philosophy__list">
+          <div class="philosophy__list-item">
+            <div class="philosophy__list-item__icon">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p><strong>Personalised care plans</strong>regularly reviewed with residents and their families to reflect changing needs and personal wishes.</p>
+            </div>
+          </div>
+          <div class="philosophy__list-item">
+            <div class="philosophy__list-item__icon">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p><strong>Rigorous quality standards</strong>maintained through internal auditing and Care Inspectorate compliance.</p>
+            </div>
+          </div>
+          <div class="philosophy__list-item">
+            <div class="philosophy__list-item__icon">
+              <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <p><strong>Open-door visiting policy</strong>so family and friends are always welcome, keeping connections strong.</p>
+            </div>
+          </div>
+        </div>
+        <a href="about.html" class="btn btn--outline">Learn Our Story</a>
+      </div>
+
+      <div class="reveal-right" style="position:relative">
+        <div class="philosophy__image-wrap">
+          <img src="https://cdn.clipond.com/boness/common_area.jpg" alt="Caring environment at Bo'ness" loading="lazy" />
+        </div>
+        <div class="philosophy__image-deco"></div>
+        <!-- small accent image -->
+        <div style="position:absolute;bottom:-2rem;left:-2rem;width:48%;border-radius:var(--radius);overflow:hidden;border:3px solid rgba(255,255,255,0.2);box-shadow:0 8px 32px rgba(0,0,0,0.3)">
+          <img src="https://cdn.clipond.com/boness/saloon_room.jpg" alt="Salon" loading="lazy" style="width:100%;height:180px;object-fit:cover" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     CONTACT STRIP
+══════════════════════════════ -->
+<section class="contact-strip section-pad">
+  <div class="container">
+    <div class="contact-strip__inner">
+      <div class="contact-strip__text reveal-left">
+        <span class="section-label">Get in Touch</span>
+        <h3>We'd Love to Hear<br>From You</h3>
+        <p>Whether you're looking for care for a loved one or simply want to find out more, our team is always happy to chat. Visits are warmly welcomed.</p>
+        <div style="margin-top:1.5rem">
+          <a href="contact.html" class="btn btn--primary">Contact Us Today</a>
+        </div>
+      </div>
+      <div class="contact-strip__info stagger">
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.08 6.08l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <strong>Phone</strong>
+            <span><a href="tel:01506829801">01506 829801</a></span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <strong>Address</strong>
+            <span>11 Bridgeness Lane, Bo'ness<br>EH51 9LQ</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <strong>Visiting Hours</strong>
+            <span>Open at any time</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">Bo'ness Care Home</div>
+        <p>A purpose-built nursing home providing the highest standard of individualised care — where every resident is treated with warmth, dignity, and respect.</p>
+        <!-- small SVG line decoration -->
+        <svg width="80" height="24" viewBox="0 0 80 24" fill="none">
+          <path d="M0 12 Q20 2 40 12 Q60 22 80 12" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="footer__col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Care</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Our Care</h4>
+        <ul>
+          <li><a href="services.html">Nursing Care</a></li>
+          <li><a href="services.html">Activities</a></li>
+          <li><a href="services.html">Hair &amp; Wellness</a></li>
+          <li><a href="services.html">Dining</a></li>
+          <li><a href="services.html">Family Support</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:01506829801">01506 829801</a></li>
+          <li><a href="#">11 Bridgeness Lane</a></li>
+          <li><a href="#">Bo'ness, EH51 9LQ</a></li>
+          <li style="margin-top:0.5rem"><a href="https://bonesscarehome.co.uk/wp-content/uploads/2024/02/Bo_Ness-Care-Home-CI-report.pdf" target="_blank" rel="noopener">Care Inspectorate Report ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2024 Bo'ness Care Home. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
