@@ -660,14 +660,17 @@ footer {
   .nav__links.open {
     display: flex; flex-direction: column;
     position: fixed; inset: 0; top: 72px;
-    background: var(--white); backdrop-filter: blur(20px);
+    z-index: 1001;
+    min-height: calc(100vh - 72px);
+    background: var(--white) !important;
+    backdrop-filter: blur(20px);
     padding: 3rem 2rem; gap: 1.5rem; align-items: flex-start;
     border-top: 1px solid var(--green-mid);
   }
   .nav__links.open .nav__link { color: var(--text); font-size: 1.1rem; }
   .nav__links.open .nav__cta { font-size: 0.9rem; padding: 12px 28px; }
   .nav.menu-open {
-    background: rgba(255,255,255,0.98) !important;
+    background: var(--white) !important;
     backdrop-filter: blur(16px);
     box-shadow: 0 1px 0 rgba(81,97,47,0.1);
   }
