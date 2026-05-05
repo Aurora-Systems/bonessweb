@@ -29,14 +29,17 @@ if (hamburger && navLinks) {
       spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
       spans[1].style.opacity = '0';
       spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      nav.classList.add('menu-open');
     } else {
       spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+      nav.classList.remove('menu-open');
     }
   });
   // Close on link click
   navLinks.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       navLinks.classList.remove('open');
+      nav.classList.remove('menu-open');
       hamburger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
     });
   });
