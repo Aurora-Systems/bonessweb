@@ -142,15 +142,55 @@ document.querySelectorAll('.stat').forEach(el => counterObserver.observe(el));
 // ── Contact form ──
 const form = document.querySelector('.contact-form form');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('.form-submit');
-    btn.textContent = 'Message Sent ✓';
-    btn.style.background = '#6b7d3e';
-    setTimeout(() => {
-      btn.textContent = 'Send Message';
-      btn.style.background = '';
-      form.reset();
-    }, 3000);
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+
+    const data = {
+      firstName: form.querySelector('#first-name').value.trim(),
+      lastName:  form.querySelector('#last-name').value.trim(),
+      email:     form.querySelector('#email').value.trim(),
+      phone:     form.querySelector('#phone').value.trim(),
+      enquiry:   form.querySelector('#enquiry').value,
+      message:   form.querySelector('#message').value.trim(),
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        btn.textContent = 'Message Sent ✓';
+        btn.style.background = '#6b7d3e';
+        form.reset();
+        setTimeout(() => {
+          btn.textContent = 'Send Message';
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 4000);
+      } else {
+        const { error } = await res.json().catch(() => ({}));
+        btn.textContent = error || 'Something went wrong — please try again.';
+        btn.style.background = '#c0392b';
+        setTimeout(() => {
+          btn.textContent = 'Send Message';
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 4000);
+      }
+    } catch {
+      btn.textContent = 'Network error — please try again.';
+      btn.style.background = '#c0392b';
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 4000);
+    }
   });
 }
