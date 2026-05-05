@@ -1,4 +1,4 @@
-const RECIPIENT = 'director@bonesscarehome.co.uk';
+const RECIPIENT = 'manager@bonesscarehome.co.uk';
 
 const ENQUIRY_LABELS = {
   admission: 'Care Admission Enquiry',
