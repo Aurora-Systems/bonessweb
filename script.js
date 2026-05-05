@@ -10,9 +10,11 @@ function updateNav() {
   if (window.scrollY > 60) {
     nav.classList.add('scrolled');
     nav.classList.remove('hero-top');
-  } else {
+  } else if (isHero) {
     nav.classList.remove('scrolled');
-    if (isHero) nav.classList.add('hero-top');
+    nav.classList.add('hero-top');
+  } else {
+    nav.classList.add('scrolled');
   }
 }
 window.addEventListener('scroll', updateNav, { passive: true });
