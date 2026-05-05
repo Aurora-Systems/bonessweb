@@ -645,6 +645,13 @@ footer {
   .values-grid { grid-template-columns: repeat(2, 1fr); }
   .services__grid { grid-template-columns: repeat(2, 1fr); }
   .room-grid { grid-template-columns: repeat(2, 1fr); }
+  .welcome__inner, .philosophy__inner, .facilities-intro__inner,
+  .about-story__inner, .service-detail, .contact-main__inner {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  .service-detail--reverse { direction: ltr; }
+  .about-story__img-secondary { display: none; }
 }
 
 @media (max-width: 768px) {
@@ -660,10 +667,6 @@ footer {
   .nav__links.open .nav__link { color: var(--text); font-size: 1.1rem; }
   .nav__links.open .nav__cta { font-size: 0.9rem; padding: 12px 28px; }
 
-  .welcome__inner, .philosophy__inner, .facilities-intro__inner,
-  .about-story__inner, .service-detail, .contact-main__inner { grid-template-columns: 1fr; }
-  .service-detail--reverse { direction: ltr; }
-  .about-story__img-secondary { display: none; }
   .gallery__grid { grid-template-columns: 1fr 1fr; }
   .gallery__item--wide { grid-column: span 2; }
   .gallery__item--tall { grid-row: span 1; }
